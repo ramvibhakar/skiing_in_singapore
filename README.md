@@ -13,4 +13,4 @@ To run the program, place the data into map.txt (The data is already loaded in m
 
 	python skiing_in_singapore.py
 	
-The program took less than a minute to publish results on a Macbook pro.
+The program took 8 seconds to publish results on a Macbook pro.
