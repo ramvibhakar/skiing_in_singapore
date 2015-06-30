@@ -15,7 +15,7 @@ class SkiingInSingapore:
     columns = 0         # number of columns in file
 
     # This method reads the file map.txt and loads data into elevation[][]
-    def input_into_graph(self):
+    def input_into_2d_array(self):
         f = open(FILE_NAME, 'r')
         self.rows, self.columns = [int(x) for x in f.readline().split()]
         for i in xrange(0,self.rows):
@@ -69,7 +69,7 @@ class SkiingInSingapore:
 
 def main():
     obj = SkiingInSingapore()
-    obj.input_into_graph()
+    obj.input_into_2d_array()
     max_dist, max_drop = obj.find_longest_steep_path()
     print("The max length of skii is "+ str(max_dist))
     print("The drop of the skii is "+ str(max_drop))
